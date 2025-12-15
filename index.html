@@ -42,10 +42,9 @@
 <!-- ================= HERO ================= -->
 <section class="min-h-screen flex items-center justify-center text-center px-6">
   <div data-aos="fade-up">
-    <!-- Lottie / Three.js Placeholder -->
- <div id="robot-container" class="w-full h-[300px] md:h-[400px]"></div>
-
-   
+    
+ <!-- Three.js Robot Animation -->
+ <div id="robot-container" class="h-64 md:h-96 mb-6"></div>
 
     <h1 class="text-4xl md:text-6xl font-orbitron text-cyan-400">
       Machines. Minds. Magic.
@@ -74,17 +73,43 @@
   </div>
 </section>
 
+ 
+
+
 <!-- ================= ABOUT ================= -->
-<section id="about" class="section">
-  <h2 class="section-title">About Us</h2>
+<section id="About" class="section bg-gradient">
+  <h2 class="section-title">About</h2>
+
+ 
+  <p class="max-w-3xl mx-auto text-center text-gray-300 mt-6">
+  The Robotics Club is a community of builders, thinkers, and innovators driven by
+  curiosity and real-world problem solving. We believe robotics is not just about
+  machines, but about mindset—learning by building, failing fast, and creating
+  technology that matters.
+</p>
+
 
   <!-- Timeline -->
-  <div class="timeline">
-    <div class="timeline-item">2021 – Club Founded by robotics enthusiasts</div>
-    <div class="timeline-item">2022 – First inter-college competition win</div>
-    <div class="timeline-item">2023 – AI & ROS labs introduced</div>
-    <div class="timeline-item">2024 – National-level robotics finalists</div>
-  </div>
+  <div class="timeline-item">
+  <strong>2021 – Foundation</strong><br>
+  Built our first robots and formed a core team of passionate engineers.
+</div>
+
+<div class="timeline-item">
+  <strong>2022 – Competitive Breakthrough</strong><br>
+  Won our first inter-college competition and strengthened hardware design skills.
+</div>
+
+<div class="timeline-item">
+  <strong>2023 – Intelligence Layer</strong><br>
+  Introduced AI, ROS, and computer vision into autonomous systems.
+</div>
+
+<div class="timeline-item">
+  <strong>2024 – National Recognition</strong><br>
+  Represented our institute at national-level robotics competitions.
+</div>
+
 
   <!-- Team -->
   <h3 class="mt-12 text-2xl text-cyan-400">Core Team</h3>
@@ -94,117 +119,35 @@
     <div class="team-card">Faculty Advisor<br><span>Embedded Systems</span></div>
     <div class="team-card">Project Lead<br><span>IoT & Automation</span></div>
   </div>
-</section>
+  <h3 class="mt-16 text-2xl text-cyan-400 text-center">
+  What You Will Learn Here
+</h3>
 
-<!-- ================= PROJECTS ================= -->
-<section id="projects" class="section bg-gradient">
-  <h2 class="section-title">Projects</h2>
-
-  <p class="max-w-3xl mx-auto text-center text-gray-300 mb-10">
-    From beginner builds to advanced autonomous systems, our projects reflect
-    hands-on learning, teamwork, and real-world problem solving.
-  </p>
-
-  <!-- Featured Project -->
-  <div class="border border-cyan-500 rounded-xl p-6 mb-12 bg-black/70">
-    <span class="text-xs text-purple-400">FEATURED • ADVANCED</span>
-    <h3 class="text-2xl text-cyan-400 mt-2 font-orbitron">
-      Autonomous Obstacle Avoidance Robot
-    </h3>
-    <p class="text-sm text-gray-400 mt-1">
-      Category: Robotics • AI • Embedded Systems
+<div class="grid md:grid-cols-3 gap-6 mt-8">
+  <div class="border border-cyan-500 rounded-xl p-5 bg-black/70">
+    <h4 class="text-cyan-400">Build</h4>
+    <p class="text-sm text-gray-300">
+      Hands-on experience with sensors, motors, controllers, and mechanics.
     </p>
-    <p class="mt-4 text-gray-300">
-      Designed and built a fully autonomous robot capable of detecting and avoiding
-      obstacles in real time using ultrasonic sensors and decision logic.
-    </p>
-
-    <div class="flex flex-wrap gap-2 mt-4 text-xs">
-      <span class="px-2 py-1 border border-cyan-500 rounded">Arduino</span>
-      <span class="px-2 py-1 border border-cyan-500 rounded">Ultrasonic Sensor</span>
-      <span class="px-2 py-1 border border-cyan-500 rounded">Motor Driver</span>
-      <span class="px-2 py-1 border border-cyan-500 rounded">C++</span>
-    </div>
-
-    <div class="mt-6 flex gap-4">
-      <a href="#" class="btn-primary">View Demo</a>
-      <a href="#" class="btn-secondary">GitHub Repo</a>
-    </div>
   </div>
 
-  <!-- Projects Grid -->
-  <div class="grid md:grid-cols-3 gap-6">
-
-    <!-- Project Card -->
-    <div class="border border-cyan-500 rounded-xl p-5 bg-black/70">
-      <span class="text-xs text-green-400">BEGINNER</span>
-      <h4 class="text-lg text-cyan-400 mt-2">
-        Line Follower Robot
-      </h4>
-      <p class="text-xs text-gray-400">
-        Category: Robotics
-      </p>
-      <p class="mt-3 text-sm text-gray-300">
-        Built a sensor-based robot to follow a predefined path using IR sensors.
-      </p>
-      <div class="flex flex-wrap gap-2 mt-3 text-xs">
-        <span class="px-2 py-1 border rounded">Arduino</span>
-        <span class="px-2 py-1 border rounded">IR Sensors</span>
-      </div>
-      <div class="mt-4 flex justify-between">
-        <a href="#" class="btn-secondary text-sm">Details</a>
-        <a href="#" class="btn-secondary text-sm">Code</a>
-      </div>
-    </div>
-
-    <!-- Project Card -->
-    <div class="border border-cyan-500 rounded-xl p-5 bg-black/70">
-      <span class="text-xs text-yellow-400">INTERMEDIATE</span>
-      <h4 class="text-lg text-cyan-400 mt-2">
-        Smart Irrigation System
-      </h4>
-      <p class="text-xs text-gray-400">
-        Category: IoT • Agriculture
-      </p>
-      <p class="mt-3 text-sm text-gray-300">
-        Automated irrigation using soil moisture sensors to optimize water usage.
-      </p>
-      <div class="flex flex-wrap gap-2 mt-3 text-xs">
-        <span class="px-2 py-1 border rounded">ESP32</span>
-        <span class="px-2 py-1 border rounded">IoT</span>
-        <span class="px-2 py-1 border rounded">Sensors</span>
-      </div>
-      <div class="mt-4 flex justify-between">
-        <a href="#" class="btn-secondary text-sm">Details</a>
-        <a href="#" class="btn-secondary text-sm">Code</a>
-      </div>
-    </div>
-
-    <!-- Project Card -->
-    <div class="border border-cyan-500 rounded-xl p-5 bg-black/70">
-      <span class="text-xs text-red-400">ADVANCED</span>
-      <h4 class="text-lg text-cyan-400 mt-2">
-        Vision-Based Object Detection
-      </h4>
-      <p class="text-xs text-gray-400">
-        Category: AI • Computer Vision
-      </p>
-      <p class="mt-3 text-sm text-gray-300">
-        Implemented real-time object detection using camera input and ML models.
-      </p>
-      <div class="flex flex-wrap gap-2 mt-3 text-xs">
-        <span class="px-2 py-1 border rounded">Python</span>
-        <span class="px-2 py-1 border rounded">OpenCV</span>
-        <span class="px-2 py-1 border rounded">ML</span>
-      </div>
-      <div class="mt-4 flex justify-between">
-        <a href="#" class="btn-secondary text-sm">Details</a>
-        <a href="#" class="btn-secondary text-sm">Code</a>
-      </div>
-    </div>
-
+  <div class="border border-cyan-500 rounded-xl p-5 bg-black/70">
+    <h4 class="text-purple-400">Think</h4>
+    <p class="text-sm text-gray-300">
+      Control systems, debugging, problem-solving, and engineering logic.
+    </p>
   </div>
+
+  <div class="border border-cyan-500 rounded-xl p-5 bg-black/70">
+    <h4 class="text-green-400">Compete</h4>
+    <p class="text-sm text-gray-300">
+      Teamwork, competition strategy, and real-world robotics exposure.
+    </p>
+  </div>
+</div>
+
 </section>
+
 
 
 <!-- ================= UNIQUE FEATURES ================= -->
@@ -542,7 +485,7 @@
 
 
 <!-- ================= WHY SPONSOR US ================= -->
-<section id="sponsors" class="section bg-gradient">
+<section id="sponsors" class="section">
   <h2 class="section-title">Why Sponsor Us?</h2>
 
   <p class="max-w-3xl mx-auto text-center text-gray-300 mb-10">
@@ -647,7 +590,7 @@
 
 
 <!-- ================= CONTACT ================= -->
-<footer class="section border-t border-cyan-500">
+<footer class="section bg-gradient">
   <h2 class="section-title">Contact</h2>
   <p>Email: ashishnyro@gmail.com</p>
   <p>Instagram:ashishnyro | LinkedIn: ashishnyro </p>
@@ -662,5 +605,6 @@
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script src="https://unpkg.com/three@0.158.0/build/three.min.js"></script>
 <script src="script.js"></script>
+
 </body>
 </html>
