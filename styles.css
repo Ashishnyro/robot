@@ -1,0 +1,77 @@
+.font-orbitron { font-family: 'Orbitron', sans-serif; }
+.font-rajdhani { font-family: 'Rajdhani', sans-serif; }
+
+.nav-link {
+  color: #67e8f9;
+}
+.nav-link:hover {
+  color: #a855f7;
+}
+
+.section {
+  padding: 6rem 1.5rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #22d3ee;
+  margin-bottom: 3rem;
+  font-family: Orbitron;
+}
+
+.bg-gradient {
+  background: linear-gradient(135deg, #0f172a, #1e1b4b);
+}
+
+.btn-primary {
+  padding: 0.75rem 1.5rem;
+  background: #22d3ee;
+  color: black;
+  font-weight: bold;
+}
+
+.btn-secondary {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #a855f7;
+  color: #a855f7;
+}
+
+.timeline-item {
+  border-left: 2px solid cyan;
+  padding-left: 1rem;
+  margin: 1rem 0;
+}
+
+.team-card {
+  padding: 1.5rem;
+  border: 1px solid cyan;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.team-card:hover {
+  transform: translateY(-8px);
+}
+
+.progress {
+  background: #111;
+  margin: 0.5rem 0;
+}
+.progress span {
+  display: block;
+  background: cyan;
+  padding: 0.25rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  background: #111;
+  border: 1px solid cyan;
+  color: white;
+}
+
+.blog-card {
+  border: 1px solid purple;
+  padding: 1rem;
+}

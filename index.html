@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Robotics Club | Machines. Minds. Magic.</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Rajdhani:wght@400;600&family=Roboto+Mono&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css"/>
+
+  <!-- Analytics Placeholder -->
+  <!-- Google Analytics script goes here -->
+
+</head>
+
+<body class="bg-black text-gray-200 font-rajdhani">
+
+<!-- ================= NAVBAR ================= -->
+<nav class="fixed w-full z-50 bg-black/70 backdrop-blur border-b border-cyan-500">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+    <h1 class="text-cyan-400 font-orbitron text-xl">Robotics Club</h1>
+    <div class="space-x-6 hidden md:block">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#events" class="nav-link">Events</a>
+      <a href="#blog" class="nav-link">Blog</a>
+      <a href="#join" class="nav-link">Join</a>
+      <button id="darkToggle" aria-label="Toggle dark mode" class="px-3 py-1 border rounded">🌙</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="min-h-screen flex items-center justify-center text-center px-6">
+  <div data-aos="fade-up">
+    <!-- Lottie / Three.js Placeholder -->
+ <div id="robot-container" class="w-full h-[300px] md:h-[400px]"></div>
+
+   
+
+    <h1 class="text-4xl md:text-6xl font-orbitron text-cyan-400">
+      Machines. Minds. Magic.
+    </h1>
+
+    <p class="mt-4 max-w-xl mx-auto text-gray-300">
+      We design, build, and compete with intelligent machines while mastering industry-relevant robotics skills.
+    </p>
+
+    <ul class="mt-4 space-y-1">
+      <li>• Hands-on Robotics</li>
+      <li>• Industry-Relevant Skills</li>
+      <li>• Competitions & Innovation</li>
+    </ul>
+
+    <!-- Countdown -->
+    <div class="mt-6 text-xl text-purple-400" id="countdown">
+      Next Competition in: Loading...
+    </div>
+
+    <!-- CTA -->
+    <div class="mt-8 space-x-4">
+      <a href="#join" class="btn-primary">Join the Club</a>
+      <a href="#sponsors" class="btn-secondary">Become a Sponsor</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section">
+  <h2 class="section-title">About Us</h2>
+
+  <!-- Timeline -->
+  <div class="timeline">
+    <div class="timeline-item">2021 – Club Founded by robotics enthusiasts</div>
+    <div class="timeline-item">2022 – First inter-college competition win</div>
+    <div class="timeline-item">2023 – AI & ROS labs introduced</div>
+    <div class="timeline-item">2024 – National-level robotics finalists</div>
+  </div>
+
+  <!-- Team -->
+  <h3 class="mt-12 text-2xl text-cyan-400">Core Team</h3>
+  <div class="grid md:grid-cols-4 gap-6 mt-6">
+    <div class="team-card">President<br><span>AI & ROS</span></div>
+    <div class="team-card">Vice President<br><span>Mechanical CAD</span></div>
+    <div class="team-card">Faculty Advisor<br><span>Embedded Systems</span></div>
+    <div class="team-card">Project Lead<br><span>IoT & Automation</span></div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="section bg-gradient">
+  <h2 class="section-title">Projects</h2>
+
+  <p class="max-w-3xl mx-auto text-center text-gray-300 mb-10">
+    From beginner builds to advanced autonomous systems, our projects reflect
+    hands-on learning, teamwork, and real-world problem solving.
+  </p>
+
+  <!-- Featured Project -->
+  <div class="border border-cyan-500 rounded-xl p-6 mb-12 bg-black/70">
+    <span class="text-xs text-purple-400">FEATURED • ADVANCED</span>
+    <h3 class="text-2xl text-cyan-400 mt-2 font-orbitron">
+      Autonomous Obstacle Avoidance Robot
+    </h3>
+    <p class="text-sm text-gray-400 mt-1">
+      Category: Robotics • AI • Embedded Systems
+    </p>
+    <p class="mt-4 text-gray-300">
+      Designed and built a fully autonomous robot capable of detecting and avoiding
+      obstacles in real time using ultrasonic sensors and decision logic.
+    </p>
+
+    <div class="flex flex-wrap gap-2 mt-4 text-xs">
+      <span class="px-2 py-1 border border-cyan-500 rounded">Arduino</span>
+      <span class="px-2 py-1 border border-cyan-500 rounded">Ultrasonic Sensor</span>
+      <span class="px-2 py-1 border border-cyan-500 rounded">Motor Driver</span>
+      <span class="px-2 py-1 border border-cyan-500 rounded">C++</span>
+    </div>
+
+    <div class="mt-6 flex gap-4">
+      <a href="#" class="btn-primary">View Demo</a>
+      <a href="#" class="btn-secondary">GitHub Repo</a>
+    </div>
+  </div>
+
+  <!-- Projects Grid -->
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <!-- Project Card -->
+    <div class="border border-cyan-500 rounded-xl p-5 bg-black/70">
+      <span class="text-xs text-green-400">BEGINNER</span>
+      <h4 class="text-lg text-cyan-400 mt-2">
+        Line Follower Robot
+      </h4>
+      <p class="text-xs text-gray-400">
+        Category: Robotics
+      </p>
+      <p class="mt-3 text-sm text-gray-300">
+        Built a sensor-based robot to follow a predefined path using IR sensors.
+      </p>
+      <div class="flex flex-wrap gap-2 mt-3 text-xs">
+        <span class="px-2 py-1 border rounded">Arduino</span>
+        <span class="px-2 py-1 border rounded">IR Sensors</span>
+      </div>
+      <div class="mt-4 flex justify-between">
+        <a href="#" class="btn-secondary text-sm">Details</a>
+        <a href="#" class="btn-secondary text-sm">Code</a>
+      </div>
+    </div>
+
+    <!-- Project Card -->
+    <div class="border border-cyan-500 rounded-xl p-5 bg-black/70">
+      <span class="text-xs text-yellow-400">INTERMEDIATE</span>
+      <h4 class="text-lg text-cyan-400 mt-2">
+        Smart Irrigation System
+      </h4>
+      <p class="text-xs text-gray-400">
+        Category: IoT • Agriculture
+      </p>
+      <p class="mt-3 text-sm text-gray-300">
+        Automated irrigation using soil moisture sensors to optimize water usage.
+      </p>
+      <div class="flex flex-wrap gap-2 mt-3 text-xs">
+        <span class="px-2 py-1 border rounded">ESP32</span>
+        <span class="px-2 py-1 border rounded">IoT</span>
+        <span class="px-2 py-1 border rounded">Sensors</span>
+      </div>
+      <div class="mt-4 flex justify-between">
+        <a href="#" class="btn-secondary text-sm">Details</a>
+        <a href="#" class="btn-secondary text-sm">Code</a>
+      </div>
+    </div>
+
+    <!-- Project Card -->
+    <div class="border border-cyan-500 rounded-xl p-5 bg-black/70">
+      <span class="text-xs text-red-400">ADVANCED</span>
+      <h4 class="text-lg text-cyan-400 mt-2">
+        Vision-Based Object Detection
+      </h4>
+      <p class="text-xs text-gray-400">
+        Category: AI • Computer Vision
+      </p>
+      <p class="mt-3 text-sm text-gray-300">
+        Implemented real-time object detection using camera input and ML models.
+      </p>
+      <div class="flex flex-wrap gap-2 mt-3 text-xs">
+        <span class="px-2 py-1 border rounded">Python</span>
+        <span class="px-2 py-1 border rounded">OpenCV</span>
+        <span class="px-2 py-1 border rounded">ML</span>
+      </div>
+      <div class="mt-4 flex justify-between">
+        <a href="#" class="btn-secondary text-sm">Details</a>
+        <a href="#" class="btn-secondary text-sm">Code</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= UNIQUE FEATURES ================= -->
+<!-- ================= INNOVATION LAB ================= -->
+<section class="section">
+  <h2 class="section-title">Innovation Lab</h2>
+
+  <div class="grid md:grid-cols-2 gap-8">
+
+    <!-- ROBOT CONTROL PANEL -->
+    <div class="border border-cyan-500 rounded-xl p-6 bg-black/70">
+      <h3 class="text-xl text-cyan-400 mb-4 font-orbitron">
+        🤖 Virtual Robot Control Panel
+      </h3>
+
+      <!-- Speed -->
+      <div class="mb-4">
+        <label class="block text-sm mb-1">Motor Speed (PWM)</label>
+        <input id="speed" type="range" min="0" max="255" value="120" class="w-full">
+        <span class="text-cyan-400 text-sm">Value: <span id="speedVal">120</span></span>
+      </div>
+
+      <!-- Direction -->
+      <div class="grid grid-cols-3 gap-2 text-center my-4">
+        <button class="btn-secondary">⬆ Forward</button>
+        <button class="btn-secondary">⟲ Left</button>
+        <button class="btn-secondary">⟳ Right</button>
+        <button class="btn-secondary col-span-3">⬇ Backward</button>
+      </div>
+
+      <!-- Sensors -->
+      <div class="text-sm space-y-1 mt-4">
+        <p>Ultrasonic Distance: <span id="distance" class="text-cyan-400">--</span> cm</p>
+        <p>Battery Level: <span id="battery" class="text-purple-400">--</span> %</p>
+        <p>Status: <span class="text-green-400">ONLINE</span></p>
+      </div>
+    </div>
+
+    <!-- INNOVATION METRICS -->
+    <div class="border border-cyan-500 rounded-xl p-6 bg-black/70">
+      <h3 class="text-xl text-cyan-400 mb-4 font-orbitron">
+        🚀 Innovation Metrics
+      </h3>
+
+      <div class="grid grid-cols-2 gap-4 text-center">
+        <div class="metric-box">
+          <p class="text-3xl text-cyan-400" id="robotsBuilt">0</p>
+          <p class="text-sm">Robots Built</p>
+        </div>
+        <div class="metric-box">
+          <p class="text-3xl text-purple-400" id="competitions">0</p>
+          <p class="text-sm">Competitions</p>
+        </div>
+        <div class="metric-box">
+          <p class="text-3xl text-green-400" id="members">0</p>
+          <p class="text-sm">Active Members</p>
+        </div>
+        <div class="metric-box">
+          <p class="text-3xl text-yellow-400" id="projects">0</p>
+          <p class="text-sm">Live Projects</p>
+        </div>
+      </div>
+
+      <p class="mt-6 text-sm text-gray-400">
+        Simulated data • Real innovation mindset
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ================= EVENTS & WORKSHOPS ================= -->
+<section id="events" class="section bg-gradient">
+  <h2 class="section-title">Events & Workshops</h2>
+
+  <!-- Upcoming Events -->
+  <h3 class="text-xl text-cyan-400 mb-6 font-orbitron">Upcoming</h3>
+
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <!-- Event Card -->
+    <div class="border border-cyan-500 rounded-xl p-5 bg-black/70">
+      <span class="text-xs text-green-400">UPCOMING • WORKSHOP</span>
+      <h4 class="text-lg text-cyan-400 mt-2">
+        AI for Robotics Bootcamp
+      </h4>
+      <p class="text-sm text-gray-400 mt-1">
+        Jan 18–19, 2025 • 6 Hours
+      </p>
+      <p class="text-sm mt-3 text-gray-300">
+        Learn computer vision, ML pipelines, and real-time decision making for robots.
+      </p>
+      <ul class="text-xs mt-3 text-gray-400 space-y-1">
+        <li>• OpenCV basics</li>
+        <li>• Vision-based navigation</li>
+        <li>• Hands-on demo</li>
+      </ul>
+      <button class="btn-primary mt-4 w-full">Register</button>
+    </div>
+
+    <!-- Event Card -->
+    <div class="border border-cyan-500 rounded-xl p-5 bg-black/70">
+      <span class="text-xs text-green-400">UPCOMING • COMPETITION</span>
+      <h4 class="text-lg text-cyan-400 mt-2">
+        Inter-College Robotics Challenge
+      </h4>
+      <p class="text-sm text-gray-400 mt-1">
+        Feb 10, 2025 • Arena Event
+      </p>
+      <p class="text-sm mt-3 text-gray-300">
+        Compete in autonomous navigation, speed trials, and innovation rounds.
+      </p>
+      <ul class="text-xs mt-3 text-gray-400 space-y-1">
+        <li>• Line follower race</li>
+        <li>• Obstacle avoidance</li>
+        <li>• Innovation pitch</li>
+      </ul>
+      <button class="btn-primary mt-4 w-full">Register Team</button>
+    </div>
+
+    <!-- Event Card -->
+    <div class="border border-cyan-500 rounded-xl p-5 bg-black/70">
+      <span class="text-xs text-green-400">UPCOMING • TALK</span>
+      <h4 class="text-lg text-cyan-400 mt-2">
+        Careers in Robotics & AI
+      </h4>
+      <p class="text-sm text-gray-400 mt-1">
+        Feb 25, 2025 • Guest Lecture
+      </p>
+      <p class="text-sm mt-3 text-gray-300">
+        Industry experts discuss career paths, startups, and research opportunities.
+      </p>
+      <ul class="text-xs mt-3 text-gray-400 space-y-1">
+        <li>• Industry trends</li>
+        <li>• Skill roadmap</li>
+        <li>• Q&A session</li>
+      </ul>
+      <button class="btn-secondary mt-4 w-full">Notify Me</button>
+    </div>
+
+  </div>
+
+  <!-- Past Events -->
+  <h3 class="text-xl text-purple-400 mt-14 mb-6 font-orbitron">
+    Past Highlights
+  </h3>
+
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <div class="border border-purple-500 rounded-xl p-5 bg-black/70">
+      <span class="text-xs text-purple-400">COMPLETED</span>
+      <h4 class="text-lg text-purple-300 mt-2">
+        ROS for Beginners
+      </h4>
+      <p class="text-sm text-gray-400 mt-1">
+        Dec 2024 • 120+ Participants
+      </p>
+      <p class="text-sm mt-3 text-gray-300">
+        A hands-on introduction to ROS fundamentals and simulation.
+      </p>
+    </div>
+
+    <div class="border border-purple-500 rounded-xl p-5 bg-black/70">
+      <span class="text-xs text-purple-400">COMPLETED</span>
+      <h4 class="text-lg text-purple-300 mt-2">
+        Robotics Hackathon 2024
+      </h4>
+      <p class="text-sm text-gray-400 mt-1">
+        Nov 2024 • 36 Teams
+      </p>
+      <p class="text-sm mt-3 text-gray-300">
+        24-hour innovation sprint solving real-world robotics challenges.
+      </p>
+    </div>
+
+    <div class="border border-purple-500 rounded-xl p-5 bg-black/70">
+      <span class="text-xs text-purple-400">COMPLETED</span>
+      <h4 class="text-lg text-purple-300 mt-2">
+        Arduino & Sensors Workshop
+      </h4>
+      <p class="text-sm text-gray-400 mt-1">
+        Oct 2024 • Hands-on Lab
+      </p>
+      <p class="text-sm mt-3 text-gray-300">
+        Practical session on sensors, actuators, and microcontroller interfacing.
+      </p>
+    </div>
+
+  </div>
+
+  <iframe class="mt-6 w-full h-64" src="https://calendar.google.com/calendar/embed?src=example" title="Google Calendar"></iframe>
+</section>
+
+<!-- ================= ROBOTICS JOURNAL ================= -->
+<section id="blog" class="section">
+  <h2 class="section-title">Robotics Journal</h2>
+
+  <!-- Featured Article -->
+  <div class="border border-cyan-500 rounded-xl p-6 mb-10 bg-black/70">
+    <span class="text-xs text-purple-400">FEATURED • TUTORIAL</span>
+    <h3 class="text-2xl text-cyan-400 mt-2 font-orbitron">
+      Building a Line Follower Robot from Scratch
+    </h3>
+    <p class="text-sm text-gray-400 mt-1">
+      By Robotics Club • 6 min read • Dec 2024
+    </p>
+    <p class="mt-4 text-gray-300">
+      Learn how we designed, tested, and optimized a competition-grade line follower robot
+      using PID control, IR sensors, and Arduino.
+    </p>
+    <button class="btn-primary mt-4">Read Full Article</button>
+  </div>
+
+  <!-- Articles Grid -->
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <!-- Article Card -->
+    <div class="blog-card border border-cyan-500 rounded-xl p-5 bg-black/70">
+      <span class="text-xs text-green-400">RESEARCH</span>
+      <h3 class="text-lg text-cyan-400 mt-2">
+        AI in Autonomous Navigation
+      </h3>
+      <p class="text-xs text-gray-400">
+        By Project Team • 5 min read
+      </p>
+      <p class="mt-3 text-sm text-gray-300">
+        How computer vision and machine learning improve real-time decision making in robots.
+      </p>
+      <div class="flex justify-between items-center mt-4 text-sm">
+        <button class="like-btn">👍 <span>12</span></button>
+        <button class="btn-secondary">Read</button>
+      </div>
+    </div>
+
+    <!-- Article Card -->
+    <div class="blog-card border border-cyan-500 rounded-xl p-5 bg-black/70">
+      <span class="text-xs text-yellow-400">COMPETITION</span>
+      <h3 class="text-lg text-cyan-400 mt-2">
+        Our Journey to National Robotics Finals
+      </h3>
+      <p class="text-xs text-gray-400">
+        By Team Lead • 4 min read
+      </p>
+      <p class="mt-3 text-sm text-gray-300">
+        Lessons learned from failures, rapid prototyping, and teamwork during nationals.
+      </p>
+      <div class="flex justify-between items-center mt-4 text-sm">
+        <button class="like-btn">👍 <span>8</span></button>
+        <button class="btn-secondary">Read</button>
+      </div>
+    </div>
+
+    <!-- Article Card -->
+    <div class="blog-card border border-cyan-500 rounded-xl p-5 bg-black/70">
+      <span class="text-xs text-blue-400">TUTORIAL</span>
+      <h3 class="text-lg text-cyan-400 mt-2">
+        ROS Basics for Beginners
+      </h3>
+      <p class="text-xs text-gray-400">
+        By Robotics Mentor • 7 min read
+      </p>
+      <p class="mt-3 text-sm text-gray-300">
+        A beginner-friendly introduction to Robot Operating System and real-world use cases.
+      </p>
+      <div class="flex justify-between items-center mt-4 text-sm">
+        <button class="like-btn">👍 <span>15</span></button>
+        <button class="btn-secondary">Read</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= JOIN ================= -->
+<section id="join" class="section bg-gradient">
+  <h2 class="section-title">Join Us</h2>
+
+  <form
+    action="https://formspree.io/f/myzrawzr"
+    method="POST"
+    class="max-w-lg mx-auto space-y-4"
+  >
+
+    <input
+      type="text"
+      name="name"
+      placeholder="Full Name"
+      required
+      class="input"
+    />
+
+    <input
+      type="email"
+      name="email"
+      placeholder="Email Address"
+      required
+      class="input"
+    />
+
+    <input
+      type="text"
+      name="college"
+      placeholder="College / Department"
+      class="input"
+    />
+
+    <select name="interest" class="input" required>
+      <option value="">Area of Interest</option>
+      <option>Mechanical Design</option>
+      <option>Embedded Systems</option>
+      <option>AI / ML</option>
+      <option>ROS</option>
+      <option>Computer Vision</option>
+    </select>
+
+    <textarea
+      name="message"
+      rows="4"
+      placeholder="Why do you want to join the Robotics Club?"
+      class="input"
+    ></textarea>
+
+    <button type="submit" class="btn-primary w-full">
+      Apply to Join
+    </button>
+  </form>
+
+  <p class="text-center mt-4 text-sm text-gray-400">
+    Your details will be sent securely to the Robotics Club team.
+  </p>
+</section>
+
+
+<!-- ================= WHY SPONSOR US ================= -->
+<section id="sponsors" class="section bg-gradient">
+  <h2 class="section-title">Why Sponsor Us?</h2>
+
+  <p class="max-w-3xl mx-auto text-center text-gray-300 mb-10">
+    Partner with a next-generation Robotics Club building industry-ready engineers,
+    impactful technology, and competitive innovation.
+  </p>
+
+  <!-- VALUE GRID -->
+  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+    <!-- Brand Visibility -->
+    <div class="border border-cyan-500 rounded-xl p-6 bg-black/70">
+      <h3 class="text-xl text-cyan-400 font-orbitron mb-3">
+        🚀 Brand Visibility
+      </h3>
+      <ul class="text-sm space-y-2 text-gray-300">
+        <li>• Logo on robots, banners & merchandise</li>
+        <li>• Website & social media promotion</li>
+        <li>• Branding at competitions & events</li>
+        <li>• Recognition in press & media coverage</li>
+      </ul>
+    </div>
+
+    <!-- Talent Pipeline -->
+    <div class="border border-cyan-500 rounded-xl p-6 bg-black/70">
+      <h3 class="text-xl text-purple-400 font-orbitron mb-3">
+        🎓 Talent Pipeline
+      </h3>
+      <ul class="text-sm space-y-2 text-gray-300">
+        <li>• Early access to skilled engineers</li>
+        <li>• Internship & placement opportunities</li>
+        <li>• Resume & portfolio-ready students</li>
+        <li>• Direct interaction with top performers</li>
+      </ul>
+    </div>
+
+    <!-- Innovation Impact -->
+    <div class="border border-cyan-500 rounded-xl p-6 bg-black/70">
+      <h3 class="text-xl text-green-400 font-orbitron mb-3">
+        🧠 Innovation Impact
+      </h3>
+      <ul class="text-sm space-y-2 text-gray-300">
+        <li>• Real-world robotics solutions</li>
+        <li>• Research-driven development</li>
+        <li>• Agricultural & social-tech focus</li>
+        <li>• Rapid prototyping & testing culture</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- SPONSOR METRICS -->
+  <div class="grid md:grid-cols-4 gap-6 mt-12 text-center max-w-5xl mx-auto">
+
+    <div class="metric-box">
+      <p class="text-3xl text-cyan-400">50+</p>
+      <p class="text-sm">Active Members</p>
+    </div>
+
+    <div class="metric-box">
+      <p class="text-3xl text-purple-400">20+</p>
+      <p class="text-sm">Robots Built</p>
+    </div>
+
+    <div class="metric-box">
+      <p class="text-3xl text-green-400">10+</p>
+      <p class="text-sm">Competitions</p>
+    </div>
+
+    <div class="metric-box">
+      <p class="text-3xl text-yellow-400">5+</p>
+      <p class="text-sm">Industry Mentors</p>
+    </div>
+
+  </div>
+
+  <!-- CTA -->
+  <div class="text-center mt-12">
+    <a
+      href="#"
+      class="btn-primary mr-4"
+    >
+      Become a Sponsor
+    </a>
+
+    <a
+      href="#"
+      class="btn-secondary"
+    >
+      Download Sponsorship Deck
+    </a>
+
+    <p class="text-xs text-gray-400 mt-4">
+      Custom sponsorship tiers available • CSR & innovation partnerships welcome
+    </p>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- ================= CONTACT ================= -->
+<footer class="section border-t border-cyan-500">
+  <h2 class="section-title">Contact</h2>
+  <p>Email: ashishnyro@gmail.com</p>
+  <p>Instagram:ashishnyro | LinkedIn: ashishnyro </p>
+
+
+
+  
+
+
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://unpkg.com/three@0.158.0/build/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
