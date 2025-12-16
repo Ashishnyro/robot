@@ -203,3 +203,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+document.addEventListener("keydown", (e) => {
+  if (e.ctrlKey && ["c", "u", "s"].includes(e.key.toLowerCase())) {
+    e.preventDefault();
+  }
+});
